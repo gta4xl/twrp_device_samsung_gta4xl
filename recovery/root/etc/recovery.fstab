@@ -1,0 +1,19 @@
+# name		mountpoint	fstype	flags
+odm		/odm		ext4	logical
+product		/product	ext4	logical
+system		/system		ext4	logical
+vendor		/vendor		ext4	logical
+
+/boot				emmc	/dev/block/platform/13520000.ufs/by-name/boot		flags=backup=1;flashimg=1
+/recovery			emmc    /dev/block/platform/13520000.ufs/by-name/recovery	flags=backup=1;flashimg=1
+
+/cache				ext4	/dev/block/platform/13520000.ufs/by-name/cache
+/data				ext4	/dev/block/platform/13520000.ufs/by-name/userdata
+/efs				ext4	/dev/block/platform/13520000.ufs/by-name/efs		flags=backup=1;display="EFS"
+/metadata			ext4	/dev/block/platform/13520000.ufs/by-name/metadata	flags=backup=1;display="Metadata"
+/optics				ext4	/dev/block/platform/13520000.ufs/by-name/optics		flags=backup=1;display="Optics"
+/prism				ext4	/dev/block/platform/13520000.ufs/by-name/prism		flags=backup=1;display="Prism"
+/sec_efs			ext4	/dev/block/platform/13520000.ufs/by-name/sec_efs	flags=backup=1;display="Sec EFS"
+
+/external_sd			auto	/dev/block/mmcblk0p1 /dev/block/mmcblk0			flags=storage;wipeingui;removable
+/usb-otg			auto	/dev/block/sdf1 /dev/block/sdf				flags=storage;wipeingui;removable

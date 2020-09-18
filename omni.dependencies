@@ -1,0 +1,8 @@
+[
+	{
+		"remote":"github",
+		"repository":"gta4xl/android_kernel_samsung_gta4xl",
+		"target_path":"kernel/samsung/gta4xl",
+		"revision":"android-10.0"
+	}
+]

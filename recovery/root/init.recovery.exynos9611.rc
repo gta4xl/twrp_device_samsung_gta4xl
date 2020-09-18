@@ -1,0 +1,9 @@
+on init
+    write /proc/sys/kernel/hung_task_timeout_secs 0
+
+on fs
+    export ANDROID_ROOT /system_root
+
+    wait /dev/block/platform/13520000.ufs
+    symlink /dev/block/platform/13520000.ufs /dev/block/bootdevice
+    symlink /dev/block/platform/13520000.ufs/by-name /dev/block/by-name
