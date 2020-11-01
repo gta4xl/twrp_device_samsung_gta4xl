@@ -121,7 +121,7 @@ BUILD_BROKEN_DUP_RULES := true
 ### RECOVERY
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 ### TWRP
 TW_INCLUDE_CRYPTO := false
