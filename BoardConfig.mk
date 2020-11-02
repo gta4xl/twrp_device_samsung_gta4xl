@@ -129,6 +129,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_LEGACY_PROPS := true
+TW_NO_HAPTICS := true
 
 # init.recovery.usb.rc
 TW_EXCLUDE_DEFAULT_USB_INIT := true
